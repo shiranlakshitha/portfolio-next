@@ -1226,11 +1226,11 @@ export default function LiquidEther({
     <div className="relative w-full h-full">
 
 
-    <div className="z-10 absolute inset-0 flex flex-col justify-center items-center h-full">
+    <div className="z-10 absolute inset-0 flex flex-col justify-center items-center h-full px-[10px]">
       <p className='text-[16px] font-inter text-[#E4ECFF]'>Dynamic Web Development with Next.js & Beyond</p>
-      <h1 className='text-[72px] font-bold font-inter text-center leading-snug max-w-[1000px] text-white'>Transforming Concepts into Seamless <span className='text-[#CBACF9]'>User Experiences</span></h1>
-      <p className='text-[24px] font-inter max-w-[1200px] text-center text-[#E4ECFF]'>Hey there! I’m Shiran, an undergraduate developer from Sri Lanka, passionate about creating engaging web apps, APIs, and interactive UIs.</p>
-      <div className='z-10 mt-[25px]'>
+      <h1 className='max-md:mt-[20px] text-[46px] md:text-[56px] lg:text-[72px] font-bold font-inter text-center leading-snug max-w-[1000px] text-white'>Transforming Concepts into Seamless <span className='text-[#CBACF9]'>User Experiences</span></h1>
+      <p className='max-md:mt-[15px] text-[16px] md:text-[24px] font-inter max-w-[1200px] text-center text-[#E4ECFF]'>Hey there! I’m Shiran, an undergraduate developer from Sri Lanka, passionate about creating engaging web apps, APIs, and interactive UIs.</p>
+      <div className='z-10 mt-[25px] max-md:w-full'>
         <BorderBeamDemo />
       </div>
     </div>
