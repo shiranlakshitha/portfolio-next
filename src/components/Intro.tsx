@@ -19,7 +19,7 @@ const Intro = () => {
                     {/*this one is absolute and contain the tech stack*/}
                     <div>
                         {/*contains 2 divs from 2 containers of technologies*/}
-                        <div>
+                        <div >
                             <TechScroll />
                         </div>
                         <div></div>
