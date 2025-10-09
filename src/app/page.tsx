@@ -1,9 +1,11 @@
 import Navbar from "@/components/Navbar";
 import LiquidEther from "../components/Hero";
+import Intro from "@/components/Intro";
 export default function Home() {
   return (
-    <div className="relative">
-      <div className="absolute left-0 top-[50px] z-50 flex items-center mx-auto w-full justify-center">
+    <>
+      <div className="relative">
+      <div className="absolute left-0 top-[50px] z-50 hidden md:flex items-center mx-auto w-full justify-center">
         <Navbar />
       </div>
       <div className="bg-[#000319]" style={{ width: "100%", height: "100vh", position: "relative" }}>
@@ -26,5 +28,12 @@ export default function Home() {
         />
       </div>
     </div>
+    {/*intro section*/}
+    <div>
+      <Intro />
+    </div>
+    
+    
+    </>
   );
 }

@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${roboto.variable} ${poppins.variable} font-roboto`}>
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-[#000319]`}>
         {children}
       </body>
     </html>
