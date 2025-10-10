@@ -22,6 +22,9 @@ const Intro = () => {
             <div className='flex flex-1 gap-[25px] flex-col'>
                 <div className='relative bg-gradient-to-tl from-white/10 to-transparent flex-1 w-full h-[20vh] rounded-3xl border-1 border-[#363749]'>
                     <Image className='object-cover rounded-3xl w-full h-auto' src={WorldMap} alt='world-img' />
+                    <div className='absolute top-[100px] right-[40px] border-1 text-white border-[#6971A2] rounded-3xl px-4 py-2 bg-[#161A31]/10'>Sigapore</div>
+                    <div className='absolute top-[120px] left-[40px] border-1 text-white border-[#6971A2] rounded-3xl px-4 py-2 bg-[#161A31]/10'>USA</div>
+                    <div className='absolute bottom-[25px] left-[250px] border-1 text-white border-[#6971A2] rounded-3xl px-4 py-2 bg-[#161A31]/10'>Sigapore</div>
                     <h4 className='absolute top-10 left-10 text-white text-[30px] font-bold'>Remote-Ready Developer</h4>
                 </div>
                 <div className='flex flex-1 flex-col relative px-[15px] bg-gradient-to-b from-[#04071D] to-[#0C0E23] rounded-3xl border-1 border-[#363749]'>
