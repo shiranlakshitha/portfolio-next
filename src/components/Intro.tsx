@@ -12,8 +12,8 @@ import Jscode from "../assets/jscode.png";
 
 const Intro = () => {
   return (
-    <div className="px-[75px] my-[50px]">
-      <div className="flex flex-row h-[540px] gap-[25px] font-inter">
+    <div className="px-[75px] flex flex-col gap-[250px] lg:gap-[0px] my-[50px]">
+      <div className="flex flex-col lg:flex-row h-[540px] gap-[25px] font-inter">
         <div className="flex-1 h-[540px] relative w-full rounded-3xl">
           <Image
             src={IntroImg}
@@ -73,7 +73,7 @@ const Intro = () => {
           </div>
         </div>
       </div>
-      <div className="mt-[25px] flex flex-row gap-[25px] h-[390px] font-inter">
+      <div className="mt-[25px] flex flex-col  lg:flex-row gap-[25px] h-[390px] font-inter">
         <div className="flex-1/3 flex flex-col gap-[25px]">
           <div className="relative flex-1 flex justify-center px-3 rounded-3xl border-1 border-[#363749] bg-gradient-to-b from-[#04071D] to-[#0C0E23]">
             <h4 className="text-[24px] font-bold text-white">
