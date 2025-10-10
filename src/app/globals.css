@@ -44,3 +44,7 @@
 .animate-scroll-down {
   animation: scroll-down 25s linear infinite;
 }
+
+* {
+  scroll-behavior: smooth;
+}
