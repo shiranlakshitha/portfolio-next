@@ -3,23 +3,35 @@ import React from 'react'
 import IntroImg from '../assets/image.png'
 import WorldMap from '../assets/section input.png'
 import TechScroll from '../components/TechScroll'
+import Pointer1 from '../assets/Group.png'
+import Pointer2 from '../assets/Button.png'
+
 const Intro = () => {
   return (
-    <div>
-        <div>
-            <div>
-                <Image src={IntroImg} width={500} height={500} alt='intro-img' />
+    <div className='px-[50px] my-[50px]'>
+        <div className='flex flex-row h-[540px] gap-[25px] font-inter'>
+            <div className='flex-1 h-[540px] relative w-full rounded-3xl'>
+                <Image src={IntroImg} className='object-cover rounded-3xl h-full w-full' alt='intro-img' />
+                <Image className='absolute right-5 bottom-[75px]' src={Pointer1} alt='pointer-1' />
+                <Image src={Pointer2} className='absolute left-5 top-[75px]' alt='pointer-2' />
+                <h4 className='absolute bottom-5 left-5 font-bold text-white w-[400px] text-[35px]'>
+                    I prioritize client collaboration, fostering open communication 
+                </h4>
             </div>
-            <div>
-                <div>
-                    <Image src={WorldMap} width={500} height={500} alt='world-img' />
+            <div className='flex flex-1 gap-[10px] flex-col'>
+                <div className='bg-gradient-to-tl from-white/20 to-transparent flex-1 w-full h-[20vh] rounded-3xl border-1 border-[#363749]'>
+                    <Image className='object-cover rounded-3xl w-full h-auto' src={WorldMap} alt='world-img' />
                 </div>
-                <div>
-                    <div>the text</div>
+                <div className='flex flex-1 flex-col relative px-[15px] bg-gradient-to-b from-[#04071D] to-[#0C0E23] rounded-3xl border-1 border-[#363749]'>
+                    <div className='absolute top-[100px] left-5 text-white'>
+                        <p>I constantly try to improve</p>
+                        <h4 className='text-[32px] font-bold'>My Tech Stack</h4>
+                    </div>
+                    
                     {/*this one is absolute and contain the tech stack*/}
-                    <div>
+                    <div className='overflow-hidden'>
                         {/*contains 2 divs from 2 containers of technologies*/}
-                        <div >
+                        <div className='absolute top-0 right-8 h-full overflow-hidden'>
                             <TechScroll />
                         </div>
                         <div></div>
