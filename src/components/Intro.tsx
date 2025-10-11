@@ -12,7 +12,7 @@ import Jscode from "../assets/jscode.png";
 
 const Intro = () => {
   return (
-    <div className="px-[75px] flex flex-col gap-[250px] lg:gap-[0px] my-[50px]">
+    <div className="px-[75px] flex flex-col gap-[250px]  lg:gap-[0px] my-[50px]">
       <div className="flex flex-col lg:flex-row h-[540px] gap-[25px] font-inter">
         <div className="flex-1 h-[540px] relative w-full rounded-3xl">
           <Image
@@ -35,7 +35,7 @@ const Intro = () => {
           </h4>
         </div>
         <div className="flex flex-1 gap-[25px] flex-col">
-          <div className="relative bg-gradient-to-tl from-white/10 to-transparent flex-1 w-full h-[20vh] rounded-3xl border-1 border-[#363749]">
+          <div className="relative bg-gradient-to-tl from-white/10 to-transparent  lg:flex-1 w-full  rounded-3xl border-1 border-[#363749]">
             <Image
               className="object-cover rounded-3xl w-full h-auto"
               src={WorldMap}
@@ -54,7 +54,7 @@ const Intro = () => {
               Remote-Ready Developer
             </h4>
           </div>
-          <div className="flex flex-1 flex-col relative px-[15px] bg-gradient-to-b from-[#04071D] to-[#0C0E23] rounded-3xl border-1 border-[#363749]">
+          <div className="flex h-[300px] lg:flex-1 flex-col relative px-[15px] bg-gradient-to-b from-[#04071D] to-[#0C0E23] rounded-3xl border-1 border-[#363749]">
             <div className="absolute top-[100px] left-5 text-white">
               <p>I constantly try to improve</p>
               <h4 className="text-[32px] font-bold">My Tech Stack</h4>
@@ -73,15 +73,15 @@ const Intro = () => {
           </div>
         </div>
       </div>
-      <div className="mt-[25px] flex flex-col  lg:flex-row gap-[25px] h-[390px] font-inter">
+      <div className="mt-[400px] lg:mt-[25px] flex flex-col  lg:flex-row gap-[25px] h-[390px] font-inter">
         <div className="flex-1/3 flex flex-col gap-[25px]">
-          <div className="relative flex-1 flex justify-center px-3 rounded-3xl border-1 border-[#363749] bg-gradient-to-b from-[#04071D] to-[#0C0E23]">
+          <div className="relative lg:flex-1 h-[300px] flex justify-center px-3 rounded-3xl border-1 border-[#363749] bg-gradient-to-b from-[#04071D] to-[#0C0E23]">
             <h4 className="text-[24px] font-bold text-white">
               Tech enthusiast with a passion for development.
             </h4>
             <Image src={Codes} className="absolute bottom-0 right-5" alt="codes-img" />
           </div>
-          <div className="flex-1">
+          <div className="lg:flex-1 h-[300px]">
             <SpotlightCard
               className="custom-spotlight-card flex flex-col items-center h-full gap-[15px]"
               spotlightColor="rgba(147, 51, 234, 0.2)"
