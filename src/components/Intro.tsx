@@ -12,9 +12,9 @@ import Jscode from "../assets/jscode.png";
 
 const Intro = () => {
   return (
-    <div className="px-[75px] flex flex-col gap-[250px]  lg:gap-[0px] my-[50px]">
-      <div className="flex flex-col lg:flex-row h-[540px] gap-[25px] font-inter">
-        <div className="flex-1 h-[540px] relative w-full rounded-3xl">
+    <div className="px-[75px] flex flex-col gap-[0px] md:gap-[250px] h-auto  lg:gap-[0px] my-[50px]">
+      <div className="flex flex-col lg:flex-row h-[500px] lg:h-[540px] xl:h-[600px] 2xl:h-[700px] gap-[25px] font-inter">
+        <div className="flex-1 h-full relative w-full rounded-3xl">
           <Image
             src={IntroImg}
             className="object-cover rounded-3xl h-full w-full"
@@ -73,7 +73,7 @@ const Intro = () => {
           </div>
         </div>
       </div>
-      <div className="mt-[400px] lg:mt-[25px] flex flex-col  lg:flex-row gap-[25px] h-[390px] font-inter">
+      <div className="mt-[400px] lg:mt-[25px] flex flex-col  lg:flex-row gap-[25px] min-h-[390px] font-inter">
         <div className="flex-1/3 flex flex-col gap-[25px]">
           <div className="relative lg:flex-1 h-[300px] flex justify-center px-3 rounded-3xl border-1 border-[#363749] bg-gradient-to-b from-[#04071D] to-[#0C0E23]">
             <h4 className="text-[24px] font-bold text-white">
@@ -95,7 +95,7 @@ const Intro = () => {
             </SpotlightCard>
           </div>
         </div>
-        <div className="flex-2/3 h-[390px] flex flex-row rounded-3xl border-1 border-[#363749] bg-gradient-to-b from-[#04071D] to-[#0C0E23]">
+        <div className="flex-2/3 min-h-[390px] flex flex-row rounded-3xl border-1 border-[#363749] bg-gradient-to-b from-[#04071D] to-[#0C0E23]">
           <div className="flex-1/3 flex flex-col justify-center gap-4 text-white pl-[15px]">
             <p className="text-[16px]">The Inside Scoop</p>
             <h3 className="text-[32px] font-bold">
