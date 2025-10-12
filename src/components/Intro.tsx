@@ -12,8 +12,8 @@ import Jscode from "../assets/jscode.png";
 
 const Intro = () => {
   return (
-    <div className="px-[75px] flex flex-col gap-[0px] md:gap-[250px] h-auto  lg:gap-[0px] my-[50px]">
-      <div className="flex flex-col lg:flex-row h-[500px] lg:h-[540px] xl:h-[600px] 2xl:h-[700px] gap-[25px] font-inter">
+    <div className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-[75px] flex flex-col gap-[150px] md:gap-[180px] lg:gap-[250px] xl:gap-[0px] h-auto my-[50px]">
+      <div className="flex flex-col lg:flex-row h-[400px] md:h-[500px] lg:h-[540px] xl:h-[600px] 2xl:h-[700px] gap-[25px] font-inter">
         <div className="flex-1 h-full relative w-full rounded-3xl">
           <Image
             src={IntroImg}
@@ -21,60 +21,60 @@ const Intro = () => {
             alt="intro-img"
           />
           <Image
-            className="absolute right-10 bottom-[75px]"
+            className="absolute right-4 lg:right-10 bottom-[50px] lg:bottom-[75px] w-8 lg:w-auto"
             src={Pointer1}
             alt="pointer-1"
           />
           <Image
             src={Pointer2}
-            className="absolute left-10 top-[75px]"
+            className="absolute left-4 lg:left-10 top-[50px] lg:top-[75px] w-8 lg:w-auto"
             alt="pointer-2"
           />
-          <h4 className="absolute bottom-5 left-5 font-bold text-white w-[400px] text-[35px]">
+          <h4 className="absolute bottom-5 left-5 font-bold text-white w-[250px] lg:w-[400px] text-[20px] lg:text-[35px]">
             I prioritize client collaboration, fostering open communication
           </h4>
         </div>
         <div className="flex flex-1 gap-[25px] flex-col">
-          <div className="relative bg-gradient-to-tl from-white/10 to-transparent  lg:flex-1 w-full  rounded-3xl border-1 border-[#363749]">
+          <div className="relative bg-gradient-to-tl from-white/10 to-transparent flex-1 w-full rounded-3xl border-1 border-[#363749]">
             <Image
-              className="object-cover rounded-3xl w-full h-auto"
+              className="object-cover rounded-3xl w-full h-full"
               src={WorldMap}
               alt="world-img"
             />
-            <div className="absolute top-[100px] right-[40px] border-1 text-white border-[#6971A2] rounded-3xl px-4 py-2 bg-[#161A31]/10">
-              Sigapore
+            <div className="absolute top-[60px] lg:top-[100px] right-[20px] lg:right-[40px] border-1 text-white border-[#6971A2] rounded-2xl lg:rounded-3xl px-2 lg:px-4 py-1 lg:py-2 bg-[#161A31]/10 text-xs lg:text-base">
+              Singapore
             </div>
-            <div className="absolute top-[120px] left-[40px] border-1 text-white border-[#6971A2] rounded-3xl px-4 py-2 bg-[#161A31]/10">
+            <div className="absolute top-[80px] lg:top-[120px] left-[20px] lg:left-[40px] border-1 text-white border-[#6971A2] rounded-2xl lg:rounded-3xl px-2 lg:px-4 py-1 lg:py-2 bg-[#161A31]/10 text-xs lg:text-base">
               USA
             </div>
-            <div className="absolute bottom-[25px] left-[250px] border-1 text-white border-[#6971A2] rounded-3xl px-4 py-2 bg-[#161A31]/10">
+            <div className="absolute bottom-[25px] left-[150px] lg:left-[250px] border-1 text-white border-[#6971A2] rounded-2xl lg:rounded-3xl px-2 lg:px-4 py-1 lg:py-2 bg-[#161A31]/10 text-xs lg:text-base">
               Germany
             </div>
-            <h4 className="absolute top-10 left-10 text-white text-[30px] font-bold">
+            <h4 className="absolute top-4 lg:top-10 left-4 lg:left-10 text-white text-[20px] lg:text-[30px] font-bold">
               Remote-Ready Developer
             </h4>
           </div>
-          <div className="flex h-[300px] lg:flex-1 flex-col relative px-[15px] bg-gradient-to-b from-[#04071D] to-[#0C0E23] rounded-3xl border-1 border-[#363749]">
-            <div className="absolute top-[100px] left-5 text-white">
-              <p>I constantly try to improve</p>
-              <h4 className="text-[32px] font-bold">My Tech Stack</h4>
+          <div className="flex h-[250px] lg:h-[300px] xl:flex-1 flex-col relative px-[15px] bg-gradient-to-b from-[#04071D] to-[#0C0E23] rounded-3xl border-1 border-[#363749]">
+            <div className="absolute top-[60px] lg:top-[100px] left-5 text-white">
+              <p className="text-sm lg:text-base">I constantly try to improve</p>
+              <h4 className="text-[24px] lg:text-[32px] font-bold">My Tech Stack</h4>
             </div>
 
             {/*this one is absolute and contain the tech stack*/}
             <div className="overflow-hidden">
               {/*contains 2 divs from 2 containers of technologies*/}
-              <div className="absolute top-0 right-8 h-full overflow-hidden">
+              <div className="absolute top-0 right-4 lg:right-8 h-full w-[120px] lg:w-auto overflow-hidden">
                 <TechScroll />
               </div>
-              <div className="absolute top-0 right-[200px] h-full overflow-hidden">
+              <div className="absolute top-0 right-[140px] lg:right-[200px] h-full w-[100px] lg:w-auto overflow-hidden">
                 <DbScroll />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="mt-[400px] lg:mt-[25px] flex flex-col  lg:flex-row gap-[25px] min-h-[390px] font-inter">
-        <div className="flex-1/3 flex flex-col gap-[25px]">
+      <div className="mt-[100px] lg:mt-[25px] flex flex-col lg:flex-row gap-[25px] min-h-[390px] font-inter">
+        <div className="w-full lg:w-1/3 flex flex-col gap-[25px]">
           <div className="relative lg:flex-1 h-[300px] flex justify-center px-3 rounded-3xl border-1 border-[#363749] bg-gradient-to-b from-[#04071D] to-[#0C0E23]">
             <h4 className="text-[24px] font-bold text-white">
               Tech enthusiast with a passion for development.
