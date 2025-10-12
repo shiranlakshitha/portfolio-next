@@ -12,7 +12,7 @@ import Jscode from "../assets/jscode.png";
 
 const Intro = () => {
   return (
-    <div className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-[75px] flex flex-col gap-[150px] md:gap-[180px] lg:gap-[250px] xl:gap-[0px] h-auto my-[50px]">
+    <div className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-[75px] flex flex-col gap-[550px] sm:gap-[600px] md:gap-[700px] lg:gap-[50px] xl:gap-[0px] h-auto my-[50px]">
       <div className="flex flex-col lg:flex-row h-[400px] md:h-[500px] lg:h-[540px] xl:h-[600px] 2xl:h-[700px] gap-[25px] font-inter">
         <div className="flex-1 h-full relative w-full rounded-3xl">
           <Image
@@ -73,7 +73,7 @@ const Intro = () => {
           </div>
         </div>
       </div>
-      <div className="mt-[100px] lg:mt-[25px] flex flex-col lg:flex-row gap-[25px] min-h-[390px] font-inter">
+      <div className=" lg:mt-[25px] flex flex-col lg:flex-row gap-[25px] min-h-[390px] font-inter">
         <div className="w-full lg:w-1/3 flex flex-col gap-[25px]">
           <div className="relative lg:flex-1 h-[300px] flex justify-center px-3 rounded-3xl border-1 border-[#363749] bg-gradient-to-b from-[#04071D] to-[#0C0E23]">
             <h4 className="text-[24px] font-bold text-white">
