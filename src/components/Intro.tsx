@@ -35,7 +35,7 @@ const Intro = () => {
           </h4>
         </div>
         <div className="flex flex-1 gap-[25px] flex-col">
-          <div className="relative bg-gradient-to-tl from-white/10 to-transparent flex-1 w-full rounded-3xl border-1 border-[#363749]">
+          <div className="relative bg-gradient-to-tl from-white/10 to-transparent h-[250px] lg:flex-1 w-full rounded-3xl border-1 border-[#363749]">
             <Image
               className="object-cover rounded-3xl w-full h-full"
               src={WorldMap}
@@ -63,10 +63,10 @@ const Intro = () => {
             {/*this one is absolute and contain the tech stack*/}
             <div className="overflow-hidden">
               {/*contains 2 divs from 2 containers of technologies*/}
-              <div className="absolute top-0 right-4 lg:right-8 h-full w-[120px] lg:w-auto overflow-hidden">
+              <div className="absolute  top-0 right-4 lg:right-8 h-full w-[120px] lg:w-auto overflow-hidden">
                 <TechScroll />
               </div>
-              <div className="absolute top-0 right-[140px] lg:right-[200px] h-full w-[100px] lg:w-auto overflow-hidden">
+              <div className="absolute hidden sm:block top-0 right-[140px] lg:right-[200px] h-full w-[100px] lg:w-auto overflow-hidden">
                 <DbScroll />
               </div>
             </div>
@@ -75,15 +75,15 @@ const Intro = () => {
       </div>
       <div className=" lg:mt-[25px] flex flex-col lg:flex-row gap-[25px] min-h-[390px] font-inter">
         <div className="w-full lg:w-1/3 flex flex-col gap-[25px]">
-          <div className="relative lg:flex-1 h-[300px] flex justify-center px-3 rounded-3xl border-1 border-[#363749] bg-gradient-to-b from-[#04071D] to-[#0C0E23]">
-            <h4 className="text-[24px] font-bold text-white">
+          <div className="relative lg:flex-1 h-[300px] flex justify-start items-center lg:justify-center px-3 rounded-3xl border-1 border-[#363749] bg-gradient-to-b from-[#04071D] to-[#0C0E23]">
+            <h4 className="text-[24px] md:w-[450px] lg:w-full font-bold text-white">
               Tech enthusiast with a passion for development.
             </h4>
             <Image src={Codes} className="absolute bottom-0 right-5" alt="codes-img" />
           </div>
           <div className="lg:flex-1 h-[300px]">
             <SpotlightCard
-              className="custom-spotlight-card flex flex-col items-center h-full gap-[15px]"
+              className="custom-spotlight-card flex flex-col max-md:justify-center  items-center h-full gap-[15px]"
               spotlightColor="rgba(147, 51, 234, 0.2)"
             >
               <p className="text-white text-[24px] text-center font-bold">
