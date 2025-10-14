@@ -61,12 +61,12 @@ const Intro = () => {
             </div>
 
             {/*this one is absolute and contain the tech stack*/}
-            <div className="overflow-hidden">
+            <div className="overflow-hidden h-full">
               {/*contains 2 divs from 2 containers of technologies*/}
               <div className="absolute  top-0 right-4 lg:right-8 h-full w-[120px] lg:w-auto overflow-hidden">
                 <TechScroll />
               </div>
-              <div className="absolute hidden sm:block top-0 right-[140px] lg:right-[200px] h-full w-[100px] lg:w-auto overflow-hidden">
+              <div className="absolute hidden sm:block lg:hidden xl:block top-0 right-[140px] lg:right-[200px] h-full w-[100px] lg:w-auto overflow-hidden">
                 <DbScroll />
               </div>
             </div>
