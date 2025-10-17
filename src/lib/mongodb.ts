@@ -2,10 +2,14 @@ import mongoose from "mongoose";
 
 const MONGODB_URI = process.env.MONGODB_URI; 
 
-const connectMongoDB = async () => {
+if(!MONGODB_URI) {
+  throw new Error('missing mongodb uri enviromnet')
+}
+
+const connectMongoDB = async (): Promise<void> => {
   try {
     await mongoose.connect(MONGODB_URI, {
-      dbName: "nextjs-backend", 
+      dbName: "portfolio", 
     });
     console.log("Connected to MongoDB.");
   } catch (error) {
