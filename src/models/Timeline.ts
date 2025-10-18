@@ -20,5 +20,5 @@ const TimeLineSchema = new Schema({
     }
 })
 
-export default models.TimeLine || model("Timeline", TimeLineSchema)
+export default models.TimeLine || model("Timelines", TimeLineSchema)
 
