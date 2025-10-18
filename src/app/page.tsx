@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import LiquidEther from "../components/Hero";
 import Intro from "@/components/Intro";
+import Timeline from "@/components/Timeline";
 export default function Home() {
   return (
     <>
@@ -31,6 +32,10 @@ export default function Home() {
     {/*intro section*/}
     <div>
       <Intro />
+    </div>
+    {/*timeline section*/}
+    <div>
+      <Timeline />
     </div>
     
     
