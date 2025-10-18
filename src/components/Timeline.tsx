@@ -14,6 +14,18 @@ const events = [
     subtitle: "Organization Name",
     description: "Details about the milestone."
   },
+  {
+    year: "2022",
+    title: "Important Milestone",
+    subtitle: "Organization Name",
+    description: "Details about the milestone."
+  },
+  {
+    year: "2022",
+    title: "Important Milestone",
+    subtitle: "Organization Name",
+    description: "Details about the milestone."
+  },
 ]
 
 const Timeline = () => {
