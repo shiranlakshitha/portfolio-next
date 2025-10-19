@@ -4,9 +4,9 @@ import image from '../assets/image.png'
 
 const ProjectCard = () => {
   return (
-    <div className='w-[600px] p-[25px] bg-[#04071D] flex flex-col gap-[25px] text-white font-inter rounded-3xl border-1 border-[#363749]'>
+    <div className='max-w-[600px] p-[25px] bg-[#04071D] flex flex-col gap-[25px] text-white font-inter rounded-3xl border-1 border-[#363749] group'>
         <div className='rounded-2xl'>
-            <Image src={image} className='rounded-2xl object-cover' alt='this is an image'/>
+            <Image src={image} className='rounded-2xl object-cover group-hover:scale-105 duration-200' alt='this is an image'/>
         </div>
         <div className='flex flex-col gap-2'>
             <div>
