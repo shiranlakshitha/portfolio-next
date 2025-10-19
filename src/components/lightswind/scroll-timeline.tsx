@@ -53,7 +53,7 @@ export const ScrollTimeline = ({
   animationOrder = "sequential",
   cardAlignment = "alternating",
   lineColor = "bg-primary/30",
-  activeColor = "bg-primary",
+  activeColor = "text-white",
   progressIndicator = true,
   cardVariant = "default",
   cardEffect = "none",
@@ -209,8 +209,8 @@ export const ScrollTimeline = ({
       )}
     >
       <div className="text-center py-16 px-4">
-        <h2 className="text-3xl md:text-5xl font-bold mb-4">{title}</h2>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+        <h2 className="text-3xl md:text-5xl text-white font-bold mb-4">{title}</h2>
+        <p className="text-lg text-white text-muted-foreground max-w-2xl mx-auto">
           {subtitle}
         </p>
       </div>

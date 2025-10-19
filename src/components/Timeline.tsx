@@ -9,7 +9,7 @@ const gettimeLine = async () => {
 const Timeline = async () => {
     const timeLine = await gettimeLine()
   return (
-    <div>
+    <div className='w-full'>
         <ScrollTimeline 
       events={timeLine}
       title="My Journey"
