@@ -3,6 +3,7 @@ import LiquidEther from "../components/Hero";
 import Intro from "@/components/Intro";
 import Timeline from "@/components/Timeline";
 import Projects from "@/components/Projects";
+import CallToAction from "@/components/CallToAction";
 
 export default function Home() {
   return (
@@ -42,6 +43,10 @@ export default function Home() {
     {/*project section*/}
     <div>
       <Projects />
+    </div>
+    {/*call to action section*/}
+    <div>
+      <CallToAction />
     </div>
     
     </>
