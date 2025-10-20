@@ -1,6 +1,8 @@
 import React from 'react'
 import GooeyNav from './NavbarMenu';
 import { CiMenuBurger } from "react-icons/ci";
+import Image from 'next/image';
+import profilepic from '../assets/44.jpg'
 
 const items = [
   { label: "Home", href: "#" },
@@ -18,7 +20,7 @@ const Navbar = () => {
          {/* Content layer without blur */}
       <div className="relative z-20 flex flex-row justify-around max-md:items-center gap-[120px] md:gap-3">
         <div className='w-10 h-10 rounded-full border-white border-1'>
-
+          <Image src={profilepic} className='object-cover w-full h-full rounded-full' alt='profile-img'/>
         </div>
         <GooeyNav
           items={items}
