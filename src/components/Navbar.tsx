@@ -1,19 +1,27 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import GooeyNav from './NavbarMenu';
 import { CiMenuBurger } from "react-icons/ci";
 import Image from 'next/image';
 import profilepic from '../assets/44.jpg'
 
 const items = [
-  { label: "Home", href: "#" },
-  { label: "About", href: "#" },
-  { label: "Projects", href: "#" },
-  { label: "Testimonial", href: "#" },
-    { label: "Contact", href: "#" },
+  { label: "Home", href: "#home" },
+  { label: "About", href: "#about" },
+  { label: "Experience", href: "#timeline" },
+  { label: "Work", href: "#projects" },
+  
+    { label: "Contact", href: "#contact" },
 ];
 
 
 const Navbar = () => {
+
+  const [activeItem, setActiveItem] = useState("Home")
+
+  const handleNavClick = (label: string, href: string) =>  {
+    setActiveItem(label)
+  }
   return (
     <div className='relative px-[15px] sm:px-[25px] md:px-[50px] lg:px-[100px] py-[10px]'>
 
@@ -24,6 +32,8 @@ const Navbar = () => {
         </div>
         <GooeyNav
           items={items}
+          activeItem={activeItem}
+          onItemClick={handleNavClick}
           particleCount={15}
           particleDistances={[90, 10]}
           particleR={100}

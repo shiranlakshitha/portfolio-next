@@ -5,7 +5,7 @@ import Footer from './Footer';
 
 const CallToAction = () => {
   return (
-    <div className='w-full relative'>
+    <section id='contact' className='w-full relative'>
         <div className='z-10'>
             <RippleGrid
     enableRainbow={false}
@@ -29,7 +29,7 @@ const CallToAction = () => {
         <div className='absolute bottom-5 w-full px-[15px] md:px-[25px]'>
             <Footer />
         </div>
-    </div>
+    </section>
   )
 }
 

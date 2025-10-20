@@ -13,6 +13,8 @@ export interface GooeyNavProps {
   items: GooeyNavItem[];
   animationTime?: number;
   particleCount?: number;
+  activeItem?: string;
+  onItemClick?: (label: string, href: string) => void;
   particleDistances?: [number, number];
   particleR?: number;
   timeVariance?: number;
@@ -22,6 +24,8 @@ export interface GooeyNavProps {
 
 const GooeyNav: React.FC<GooeyNavProps> = ({
   items,
+  activeItem,
+  onItemClick,
   animationTime = 600,
   particleCount = 15,
   particleDistances = [90, 10],

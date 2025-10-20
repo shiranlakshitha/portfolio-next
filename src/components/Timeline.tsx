@@ -9,7 +9,7 @@ const gettimeLine = async () => {
 const Timeline = async () => {
     const timeLine = await gettimeLine()
   return (
-    <div className='w-full'>
+    <section id='timeline' className='w-full'>
         <ScrollTimeline 
       events={timeLine}
       title="My Journey"
@@ -18,7 +18,7 @@ const Timeline = async () => {
       cardAlignment="alternating"
       revealAnimation="fade"
     />
-    </div>
+    </section>
   )
 }
 

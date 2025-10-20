@@ -3,7 +3,7 @@ import ProjectCard from './ProjectCard'
 
 const Projects = () => {
   return (
-    <div className='w-full px-[15px] md:px-[95px]'>
+    <section id='projects' className='w-full px-[15px] md:px-[95px]'>
         <div>
             <h1 className='text-[48px] text-white font-inter text-center'>A small selection of <span className='text-[#CBACF9]'>recent projects</span></h1>
         </div>
@@ -13,7 +13,7 @@ const Projects = () => {
         <ProjectCard />
         <ProjectCard />
     </div>
-    </div>
+    </section>
   )
 }
 

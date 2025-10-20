@@ -12,7 +12,7 @@ import Jscode from "../assets/jscode.png";
 
 const Intro = () => {
   return (
-    <div className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-[75px] flex flex-col gap-[550px] sm:gap-[600px] md:gap-[700px] lg:gap-[50px] xl:gap-[0px] h-auto my-[50px]">
+    <section id="about" className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-[75px] flex flex-col gap-[550px] sm:gap-[600px] md:gap-[700px] lg:gap-[50px] xl:gap-[0px] h-auto my-[50px]">
       <div className="flex flex-col lg:flex-row h-[400px] md:h-[500px] lg:h-[540px] xl:h-[600px] 2xl:h-[700px] gap-[25px] font-inter">
         <div className="flex-1 h-full relative w-full rounded-3xl">
           <Image
@@ -111,7 +111,7 @@ const Intro = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
