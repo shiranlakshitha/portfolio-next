@@ -75,7 +75,7 @@ const ProjectCard = ({title, description, languages, imgurl, live}: {title: stri
         <div className='flex flex-col gap-2'>
             <div>
                 <h3 className='text-[32px]'>{title}</h3>
-                <p className='text-[20px] text-[#BEC1DD]'>{description}</p>
+                <p className='text-[16px] text-[#BEC1DD]'>{description}</p>
             </div>
             <div className='flex flex-row items-center justify-between'>
                 <div className='flex flex-wrap gap-3 items-center'>
