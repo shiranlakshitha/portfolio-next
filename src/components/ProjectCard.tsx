@@ -66,7 +66,7 @@ const getTechIcon = (tech: string) => {
 };
 
 
-const ProjectCard = ({title, description, languages, imgurl, live}: {title: string, description: string, languages: [], imgurl: string, live: string}) => {
+const ProjectCard = ({title, description, languages, imgurl, live}: {title: string, description: string, languages: string[], imgurl: string, live: string}) => {
   return (
     <div className='max-w-[600px] p-[25px] bg-[#04071D] flex flex-col gap-[25px] text-white font-inter rounded-3xl border-1 border-[#363749] group'>
         <div className='rounded-2xl flex items-center justify-center'>

@@ -1,8 +1,17 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
 
+interface Project {
+  _id: string;
+  title: string;
+  description: string;
+  image: string;
+  techStack: string[];
+  link: string;
+}
 
-const getProjects = async () => {
+
+const getProjects = async (): Promise<Project[]> => {
   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/project`)
   return res.json()
 }
@@ -16,8 +25,8 @@ const Projects = async () => {
         </div>
         <div className='py-[50px]  grid grid-cols-1 md:grid-cols-2 justify-items-center gap-[25px] md:gap-[15px] md:gap-y-[55px] md:gap-x-0'>
         {
-          project?.map((project: any) => (
-            <ProjectCard key={project._id} title={project.title} description={project.description} imgurl={project.image}  languages={project.techStack}/>
+          project?.map((project: Project) => (
+            <ProjectCard key={project._id} title={project.title} description={project.description} imgurl={project.image}  languages={project.techStack} live={project.link}/>
           ))
         }
     </div>
