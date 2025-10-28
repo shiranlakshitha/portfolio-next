@@ -14,7 +14,7 @@ const Projects = async () => {
         <div>
             <h1 className='text-[48px] text-white font-inter text-center'>A small selection of <span className='text-[#CBACF9]'>recent projects</span></h1>
         </div>
-        <div className='py-[50px]  grid grid-cols-1 md:grid-cols-2 justify-items-center gap-[15px] md:gap-y-[55px] md:gap-x-0'>
+        <div className='py-[50px]  grid grid-cols-1 md:grid-cols-2 justify-items-center gap-[25px] md:gap-[15px] md:gap-y-[55px] md:gap-x-0'>
         {
           project?.map((project: any) => (
             <ProjectCard key={project._id} title={project.title} description={project.description} imgurl={project.image}  languages={project.techStack}/>
