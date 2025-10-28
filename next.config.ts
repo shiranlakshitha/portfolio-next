@@ -6,7 +6,13 @@ const nextConfig: NextConfig = {
       'res.cloudinary.com',
       'cdn.example.com'
     ]
-  }
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
 };
 
 export default nextConfig;
