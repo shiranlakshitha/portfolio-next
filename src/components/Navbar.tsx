@@ -34,7 +34,7 @@ const Navbar = () => {
   }
   return (
     <>
-      <div className='hidden md:blockrelative px-[15px] sm:px-[25px] md:px-[50px] lg:px-[100px] py-[10px]'>
+      <div className='hidden md:block relative px-[15px] sm:px-[25px] md:px-[50px] lg:px-[100px] py-[10px]'>
 
          {/* Content layer without blur */}
       <div className="relative z-20 flex flex-row justify-around max-md:items-center gap-[120px] md:gap-3">

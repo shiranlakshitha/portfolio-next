@@ -91,13 +91,18 @@ textColor="#ffffff",
   const navRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  if(isOpen) {
-    document.documentElement.style.overflowY = 'hidden'
-  }
-  else {
-    document.documentElement.style.overflowY = 'auto'
-  }
+  useEffect(() => {
+    if (isOpen) {
+      document.documentElement.style.overflowY = 'hidden';
+    } else {
+      document.documentElement.style.overflowY = 'auto';
+    }
 
+    
+    return () => {
+      document.documentElement.style.overflowY = 'auto';
+    };
+  }, [isOpen]);
   const buttonSizes = {
     sm: "w-10 h-10",
     md: "w-12 h-12",
