@@ -24,8 +24,16 @@ const staticProjects = [
 
 
 const getProjects = async (): Promise<Project[]> => {
-  const res = await fetch('/api/project')
+  try {
+    const res = await fetch('/api/project')
+    if (!res.ok) {
+            throw new Error('Failed to fetch projects')
+        }
   return res.json()
+  } catch (error) {
+    console.error('Error fetching projects:', error)
+        return [] 
+  }
 }
 
 const Projects = async () => {
