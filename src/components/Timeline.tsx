@@ -10,6 +10,7 @@ const gettimeLine = async () => {
         return res.json()
     } catch (error) {
         console.error('Error fetching timeline:', error)
+        alert('error')
         return [] 
     }
 }

@@ -19,11 +19,13 @@ const getProjects = async (): Promise<Project[]> => {
     const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/project`)
     if (!res.ok) {
             throw new Error('Failed to fetch projects')
+            
         }
   return res.json()
   } catch (error) {
     console.error('Error fetching projects:', error)
-        return [] 
+    alert('error')
+        return []
   }
 }
 
