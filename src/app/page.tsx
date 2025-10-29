@@ -8,7 +8,7 @@ import CallToAction from "@/components/CallToAction";
 export default function Home() {
   return (
     <>
-      <div className="relative py-[25px]">
+      <div className="relative">
       <div className="max-md:fixed md:absolute max-md:inset-0 md:left-0 md:top-[50px] z-50 md:flex items-center mx-auto w-full justify-center">
         <Navbar />
       </div>

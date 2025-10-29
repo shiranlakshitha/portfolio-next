@@ -20,7 +20,7 @@ const techStack = [
 const TechScroll = () => {
   return (
     <div className="hide-scrollbar w-full h-full overflow-hidden rounded-2xl p-4 relative">
-      <div className="animate-scroll-up flex flex-col space-y-4">
+      <div className="animate-scroll-up flex flex-col space-y-4 text-[12px] md:text-[16px] items-center">
         {/* Duplicate the list for seamless infinite scroll */}
         {[...techStack, ...techStack].map((tech, index) => (
           <div

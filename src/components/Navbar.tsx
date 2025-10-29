@@ -64,7 +64,7 @@ const Navbar = () => {
 
     </div>
 
-    <div className='z-50 md:hidden'>
+    <div className='z-50 md:hidden '>
         <HamburgerMenuOverlay items={items}/>
     </div>
 

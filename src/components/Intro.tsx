@@ -55,18 +55,18 @@ const Intro = () => {
             </h4>
           </div>
           <div className="flex h-[250px] lg:h-[300px] xl:flex-1 flex-col relative px-[15px] bg-gradient-to-b from-[#04071D] to-[#0C0E23] rounded-3xl border-1 border-[#363749]">
-            <div className="absolute top-[60px] lg:top-[100px] left-5 text-white">
+            <div className="absolute top-[60px] lg:top-[100px]  flex-2/3 left-5 text-white">
               <p className="text-sm lg:text-base">I constantly try to improve</p>
               <h4 className="text-[24px] lg:text-[32px] font-bold">My Tech Stack</h4>
             </div>
 
             {/*this one is absolute and contain the tech stack*/}
-            <div className="overflow-hidden h-full">
+            <div className="overflow-hidden h-full flex flex-1/3 flex-col gap-3">
               {/*contains 2 divs from 2 containers of technologies*/}
               <div className="absolute  top-0 right-4 lg:right-8 h-full w-[120px] lg:w-auto overflow-hidden">
                 <TechScroll />
               </div>
-              <div className="absolute hidden sm:block lg:hidden xl:block top-0 right-[140px] lg:right-[200px] h-full w-[100px] lg:w-auto overflow-hidden">
+              <div className="absolute hidden sm:block lg:hidden xl:block top-0 right-[140px] lg:right-[200px] h-full w-[120px] lg:w-auto overflow-hidden">
                 <DbScroll />
               </div>
             </div>
@@ -96,13 +96,13 @@ const Intro = () => {
           </div>
         </div>
         <div className="flex-2/3 min-h-[390px] flex flex-row rounded-3xl border-1 border-[#363749] bg-gradient-to-b from-[#04071D] to-[#0C0E23]">
-          <div className="flex-1/3 flex flex-col justify-center gap-4 text-white pl-[15px]">
+          <div className="flex-2/3 md:flex-1/3 flex flex-col justify-center gap-4 text-white pl-[15px]">
             <p className="text-[16px]">The Inside Scoop</p>
             <h3 className="text-[32px] font-bold">
               Behind every pixel, there’s a story.
             </h3>
           </div>
-          <div className="flex-2/3 w-full">
+          <div className="flex-1/3 md:flex-2/3 w-full">
             <Image
               src={Jscode}
               className="w-full h-full object-cover"
