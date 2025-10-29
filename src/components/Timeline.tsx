@@ -3,7 +3,7 @@ import { ScrollTimeline } from "@/components/lightswind/scroll-timeline"
 
 const gettimeLine = async () => {
     try {
-        const res = await fetch('/api/timeline')
+        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/timeline`)
         if (!res.ok) {
             throw new Error('Failed to fetch timeline')
         }
