@@ -2,8 +2,16 @@ import React from 'react'
 import { ScrollTimeline } from "@/components/lightswind/scroll-timeline"
 
 const gettimeLine = async () => {
-    const res = await fetch('/api/timeline')
-    return res.json()
+    try {
+        const res = await fetch('/api/timeline')
+        if (!res.ok) {
+            throw new Error('Failed to fetch timeline')
+        }
+        return res.json()
+    } catch (error) {
+        console.error('Error fetching timeline:', error)
+        return [] 
+    }
 }
 
 const Timeline = async () => {
