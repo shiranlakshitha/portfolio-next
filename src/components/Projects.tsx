@@ -24,7 +24,7 @@ const staticProjects = [
 
 
 const getProjects = async (): Promise<Project[]> => {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/project`)
+  const res = await fetch('/api/project')
   return res.json()
 }
 

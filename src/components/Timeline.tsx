@@ -2,7 +2,7 @@ import React from 'react'
 import { ScrollTimeline } from "@/components/lightswind/scroll-timeline"
 
 const gettimeLine = async () => {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/timeline`)
+    const res = await fetch('/api/timeline')
     return res.json()
 }
 
