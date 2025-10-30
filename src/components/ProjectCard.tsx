@@ -9,7 +9,8 @@ import {
   FaJs, 
   FaPython, 
   FaGitAlt,
-  FaDocker 
+  FaDocker,
+  FaGithub
 } from "react-icons/fa";
 import { 
   SiTypescript, 
@@ -50,6 +51,7 @@ const getTechIcon = (tech: string) => {
     mysql: <SiMysql className="text-[#4479A1]" />,
     python: <FaPython className="text-[#3776AB]" />,
     git: <FaGitAlt className="text-[#F05032]" />,
+    github: <FaGithub className="text-white" />,
     docker: <FaDocker className="text-[#2496ED]" />,
     redis: <SiRedis className="text-[#DC382D]" />,
     graphql: <SiGraphql className="text-[#E10098]" />,
@@ -85,7 +87,7 @@ const ProjectCard = ({title, description, languages, imgurl, live}: {title: stri
                         </div>
                     ))}
                 </div>
-                <div className='flex flex-row items-center gap-2'>
+                <div className='flex flex-row items-center gap-2 group'>
                     <a 
                         href={live} 
                         target="_blank" 
@@ -94,7 +96,7 @@ const ProjectCard = ({title, description, languages, imgurl, live}: {title: stri
                     >
                         live site
                     </a>
-                    <FaArrowRightLong size={15} />
+                    <FaArrowRightLong className='group-hover:translate-x-1.5 duration-200' size={15} />
                 </div>
             </div>
         </div>
