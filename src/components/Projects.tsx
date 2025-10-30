@@ -1,5 +1,5 @@
 
-import React from 'react'
+
 import ProjectCard from './ProjectCard'
 
 interface Project {
@@ -10,8 +10,6 @@ interface Project {
   techStack: string[];
   link: string;
 }
-
-
 
 
 const getProjects = async (): Promise<Project[]> => {

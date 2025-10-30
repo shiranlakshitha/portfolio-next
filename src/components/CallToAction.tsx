@@ -24,7 +24,6 @@ const CallToAction = () => {
             <p className='text-[#C1C2D3]'>Reach out to me today and Let&apos;s discuss how I can help you achieve your goals.</p>
             <div className='mt-[25px] w-full mx-auto flex items-center justify-center'>
                 <Link href='mailto:shiranlakshithareal@gmail.com' target="_blank" rel="noopener noreferrer"><BorderBeamDemo input={'Contact Me Now'}/></Link>
-
             </div>
         </div>
         <div className='absolute z-50 bottom-5 w-full px-[15px] md:px-[25px]'>
