@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { BorderBeam } from "./lightswind/border-beam";
 import BorderBeamDemo from "./Borderbeambtn";
+import Link from "next/link";
 
 export interface LiquidEtherProps {
   mouseForce?: number;
@@ -1288,21 +1289,22 @@ export default function LiquidEther({
 
   return (
     <div className="relative w-full h-full">
-      <div className="z-10 absolute inset-0 flex flex-col max-md:mt-[50px] justify-center items-center gap-[25px] md:gap-0 h-full px-[10px]">
-        <p className="text-[16px] font-inter text-center text-[#E4ECFF]">
+      <div className="z-10 absolute inset-0 flex flex-col  justify-center items-center gap-[25px] md:gap-0 h-full px-[10px]">
+        <p className="text-[22px] md:text-[28px] font-inter text-center text-[#E4ECFF]">
           Dynamic Web Development with Next.js & Beyond
         </p>
-        <h1 className="max-md:mt-[20px] text-[46px] md:text-[56px] lg:text-[72px] font-bold font-inter text-center leading-snug max-w-[1000px] text-white">
+        <h1 className="max-md:mt-[20px] text-[50px] md:text-[56px] lg:text-[72px] font-bold font-inter text-center leading-snug max-w-[1000px] text-white">
           Transforming Concepts into Seamless{" "}
           <span className="text-[#CBACF9]">User Experiences</span>
         </h1>
-        <p className="max-md:mt-[15px] text-[16px] md:text-[24px] font-inter max-w-[1200px] text-center text-[#E4ECFF]">
+        <p className="max-md:mt-[15px] text-[22px] md:text-[28px] font-inter max-w-[1200px] text-center text-[#E4ECFF]">
           Hey there! I’m Shiran, an undergraduate developer from Sri Lanka,
           passionate about creating engaging web apps, APIs, and interactive
           UIs.
         </p>
         <div className="z-10 mt-[25px] max-md:w-full">
-          <BorderBeamDemo input={"see my work"} />
+          <Link href="https://github.com/shiranlakshitha" target="_blank"
+    rel="noopener noreferrer"><BorderBeamDemo input={"see my work"} /> </Link>
         </div>
       </div>
       {/* WebGL Background */}
