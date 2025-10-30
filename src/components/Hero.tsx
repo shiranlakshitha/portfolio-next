@@ -1288,7 +1288,7 @@ export default function LiquidEther({
   ]);
 
   return (
-    <div className="relative w-full h-full">
+    <section id="home" className="relative w-full h-full">
       <div className="z-10 absolute inset-0 flex flex-col  justify-center items-center gap-[25px] md:gap-0 h-full px-[10px]">
         <p className="text-[22px] md:text-[28px] font-inter text-center text-[#E4ECFF]">
           Dynamic Web Development with Next.js & Beyond
@@ -1317,6 +1317,6 @@ export default function LiquidEther({
       />
 
       {/* Content Layer */}
-    </div>
+    </section>
   );
 }
